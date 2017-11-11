@@ -38,17 +38,17 @@ class Owner
 
   def buy_fish(name)
     new_fish = Fish.new(name)
-    @@pet_hash[:fishes] = [new_fish]
+    @@pet_hash[:fishes] += [new_fish]
   end
 
   def buy_cat(name)
     new_cat = Cat.new(name)
-    @@pet_hash[:cats] = [new_cat]
+    @@pet_hash[:cats] += [new_cat]
   end
 
   def buy_dog(name)
     new_dog = Dog.new(name)
-    @@pet_hash[:dogs] = [new_dog]
+    @@pet_hash[:dogs] += [new_dog]
   end
 
   def walk_dogs
