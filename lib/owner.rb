@@ -84,9 +84,15 @@ class Owner
 
   def list_pets
     @@pet_hash.each do |key, value|
-        value.count
+        if key == :fishes
+          fish_count = value.count
+        elsif key == :dogs
+          dog_count = value.count
+        elsif key == :cats
+          cat_count = value.count
+        end
     end
-    # "I have 2 fish, 3 dog(s), and 1 cat(s)."
+    "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
   end
 
 end
@@ -110,6 +116,7 @@ owner.buy_dog("Charley")
 #
 binding.pry
 
+@pet_hash = {:fishes => ["fish1"], :dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2", "cat3", "cat4"]}
 @pet_hash.each do |key, value|
     if key == :fishes
       @fish_count = value.count
@@ -118,7 +125,6 @@ binding.pry
     elsif key == :cats
       @cat_count = value.count
     end
-      
 end
 
-@pet_hash = {:fishes => ["fish1"], :dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2", "cat3", "cat4"]}
+
