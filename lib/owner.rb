@@ -99,7 +99,7 @@ class Owner
 
 end
 
-owner = Owner.new("human")
+# owner = Owner.new("human")
 # fido = Dog.new("Fido")
 # tabby = Cat.new("Tabby")
 # nemo = Fish.new("Nemo")
