@@ -66,7 +66,7 @@ class Owner
 
   def feed_fish
     @@pet_hash.each do |key, value|
-      if key == :fish
+      if key == :fishes
         value.each { |fish_object| fish_object.mood = "happy" }
       end
     end
@@ -76,5 +76,6 @@ end
 
 owner = Owner.new("human")
 fish = Fish.new("Nemo")
+owner.pets[:fishes] << fish
 
 binding.pry
