@@ -1,7 +1,7 @@
 require 'pry'
-require_relative 'fish.rb'
-require_relative 'dog.rb'
-require_relative 'cat.rb'
+# require_relative 'fish.rb'
+# require_relative 'dog.rb'
+# require_relative 'cat.rb'
 class Owner
   attr_reader :species
   attr_accessor :name
@@ -94,5 +94,5 @@ end
 # owner.pets[:dogs] += [fido]
 # owner.pets[:cats] += [tabby, melkor]
 # owner.pets[:fishes] += [nemo]
-# 
+#
 # binding.pry
