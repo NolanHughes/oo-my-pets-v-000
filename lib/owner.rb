@@ -77,12 +77,9 @@ class Owner
 
   def sell_pets
     @@pet_hash.each do |key, value|
-        # value.each { |pets_object| pets_object.mood = "nervous" }
-        value.clear
+        value.each { |pets_object| pets_object.mood = "nervous" }
     end
-    Dog.mood = "nervous"
-    Cat.mood = "nervous"
-    Fish.mood = "nervous"
+    
   end
 
   def list_pets
