@@ -114,4 +114,4 @@ binding.pry
     @count = value.count
 end
 
-@pet_hash = {:dogs => ["dog1", "dog2"], :cats => ["cat1", "cat2"]}
+@pet_hash = {:dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2"]}
