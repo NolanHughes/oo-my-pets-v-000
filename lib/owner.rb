@@ -114,4 +114,4 @@ binding.pry
     if key == :fishes@count = value.count
 end
 
-@pet_hash = {:fishes => {"fish1"}, :dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2", "cat3", "cat4"]}
+@pet_hash = {:fishes => []"fish1"], :dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2", "cat3", "cat4"]}
