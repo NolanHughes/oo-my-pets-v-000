@@ -9,7 +9,4 @@ class Fish
     @mood = "nervous"
   end
 end
-# 
-# fish = Fish.new("Bubbles")
-#
-# binding.pry
+
