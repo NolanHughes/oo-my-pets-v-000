@@ -1,7 +1,7 @@
 require 'pry'
-# require_relative 'fish.rb'
-# require_relative 'dog.rb'
-# require_relative 'cat.rb'
+require_relative 'fish.rb'
+require_relative 'dog.rb'
+require_relative 'cat.rb'
 class Owner
   attr_reader :species
   attr_accessor :name
@@ -80,12 +80,15 @@ class Owner
         value.each { |pets_object| pets_object.mood = "nervous" }
         value.clear
     end
+  end
 
+  def list_pets
+    "I have 2 fish, 3 dog(s), and 1 cat(s)."
   end
 
 end
 
-# owner = Owner.new("human")
+owner = Owner.new("human")
 # fido = Dog.new("Fido")
 # tabby = Cat.new("Tabby")
 # nemo = Fish.new("Nemo")
@@ -94,5 +97,12 @@ end
 # owner.pets[:dogs] += [fido]
 # owner.pets[:cats] += [tabby, melkor]
 # owner.pets[:fishes] += [nemo]
+
+owner.buy_fish("Bubbles")
+owner.buy_fish("Nemo")
+owner.buy_cat("Crookshanks")
+owner.buy_dog("Fido")
+owner.buy_dog("Snuffles")
+owner.buy_dog("Charley")
 #
 # binding.pry
