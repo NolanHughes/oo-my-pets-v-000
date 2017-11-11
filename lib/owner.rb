@@ -1,7 +1,7 @@
-require 'pry'
-require_relative 'fish.rb'
-require_relative 'dog.rb'
-require_relative 'cat.rb'
+# require 'pry'
+# require_relative 'fish.rb'
+# require_relative 'dog.rb'
+# require_relative 'cat.rb'
 class Owner
   attr_reader :species
   attr_accessor :name
@@ -99,16 +99,16 @@ class Owner
 
 end
 
-owner = Owner.new("human")
-# fido = Dog.new("Fido")
-# tabby = Cat.new("Tabby")
-# nemo = Fish.new("Nemo")
-# [fido, tabby, nemo].each {|o| o.mood = "happy" }
-# owner.pets = {
-#   :dogs => [fido, Dog.new("Daisy")],
-#   :fishes => [nemo],
-#   :cats => [Cat.new("Mittens"), tabby]
-# }
-
-texas = owner.buy_dog("Texas")
-binding.pry
+# owner = Owner.new("human")
+# # fido = Dog.new("Fido")
+# # tabby = Cat.new("Tabby")
+# # nemo = Fish.new("Nemo")
+# # [fido, tabby, nemo].each {|o| o.mood = "happy" }
+# # owner.pets = {
+# #   :dogs => [fido, Dog.new("Daisy")],
+# #   :fishes => [nemo],
+# #   :cats => [Cat.new("Mittens"), tabby]
+# # }
+# 
+# texas = owner.buy_dog("Texas")
+# binding.pry
