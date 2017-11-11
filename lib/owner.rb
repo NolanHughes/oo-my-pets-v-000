@@ -12,7 +12,7 @@ class Owner
   def initialize(species)
     @species = species
     @@all_owners << self
-    @pet_hash = {:fishes => [], :dogs => [], :cats => []}
+    @pets = {:fishes => [], :dogs => [], :cats => []}
   end
 
   def self.all
@@ -32,26 +32,26 @@ class Owner
   end
 
   def pets
-    @pet_hash
+    @pets
   end
 
   def buy_fish(name)
     new_fish = Fish.new(name)
-    @pet_hash[:fishes] += [new_fish]
+    @pets[:fishes] += [new_fish]
   end
 
   def buy_cat(name)
     new_cat = Cat.new(name)
-    @pet_hash[:cats] += [new_cat]
+    @pets[:cats] += [new_cat]
   end
 
   def buy_dog(name)
     new_dog = Dog.new(name)
-    @pet_hash[:dogs] += [new_dog]
+    @pets[:dogs] += [new_dog]
   end
 
   def walk_dogs
-    @pet_hash.each do |key, value|
+    @pets.each do |key, value|
       if key == :dogs
         value.each { |dog_object| dog_object.mood = "happy" }
       end
@@ -59,7 +59,7 @@ class Owner
   end
 
   def play_with_cats
-    @pet_hash.each do |key, value|
+    @pets.each do |key, value|
       if key == :cats
         value.each { |cat_object| cat_object.mood = "happy" }
       end
@@ -67,7 +67,7 @@ class Owner
   end
 
   def feed_fish
-    @pet_hash.each do |key, value|
+    @pets.each do |key, value|
       if key == :fishes
         value.each { |fish_object| fish_object.mood = "happy" }
       end
@@ -84,7 +84,7 @@ class Owner
   end
 
   def list_pets
-    @pet_hash.each do |key, value|
+    @pets.each do |key, value|
         if key == :fishes
           @fish_count = value.count
         elsif key == :dogs
