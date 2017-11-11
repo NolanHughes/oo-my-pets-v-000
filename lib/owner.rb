@@ -83,6 +83,9 @@ class Owner
   end
 
   def list_pets
+    @@pet_hash.each do |key, value|
+        value.count
+    end
     # "I have 2 fish, 3 dog(s), and 1 cat(s)."
   end
 
@@ -106,3 +109,9 @@ owner.buy_dog("Snuffles")
 owner.buy_dog("Charley")
 #
 binding.pry
+
+@pet_hash.each do |key, value|
+    value.count
+end
+
+@pet_hash = {:dogs => ["dog1", "dog2"], :cats => ["cat1", "cat2"]}
