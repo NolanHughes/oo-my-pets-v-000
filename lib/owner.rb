@@ -80,6 +80,9 @@ class Owner
         # value.each { |pets_object| pets_object.mood = "nervous" }
         value.clear
     end
+    Dog.mood = "nervous"
+    Cat.mood = "nervous"
+    Fish.mood = "nervous"
   end
 
   def list_pets
