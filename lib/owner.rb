@@ -87,6 +87,7 @@ owner = Owner.new("human")
 fido = Dog.new("Fido")
 tabby = Cat.new("Tabby")
 nemo = Fish.new("Nemo")
+melkor = Cat.new("Melkor")
 [fido, tabby, nemo].each {|o| o.mood = "happy" }
 # owner.pets = {
 #   :dogs => [fido, Dog.new("Daisy")],
