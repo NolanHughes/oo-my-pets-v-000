@@ -78,7 +78,7 @@ class Owner
   def sell_pets
     @@pet_hash.each do |key, value|
         value.each { |pets_object| pets_object.mood = "nervous" }
-        value.each { |pets_object| pets_object.clear }
+        value.each { |pets_object| pets_object = [] }
     end
 
   end
