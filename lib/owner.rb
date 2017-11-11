@@ -92,10 +92,5 @@ melkor = Cat.new("Melkor")
 @@pets[:dogs] += [fido]
 @@pets[:cats] += [tabby, melkor]
 @@pets[:fishes] += [nemo]
-# owner.pets = {
-#   :dogs => [fido, Dog.new("Daisy")],
-#   :fishes => [nemo],
-#   :cats => [Cat.new("Mittens"), tabby]
-# }
 
 binding.pry
