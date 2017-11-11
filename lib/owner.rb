@@ -60,7 +60,7 @@ class Owner
 
 end
 
-owner = Owner.new("human")
-dog = Dog.new("Daisy")
-owner.pets[:dogs] << dog
-binding.pry
+# owner = Owner.new("human")
+# dog = Dog.new("Daisy")
+# owner.pets[:dogs] << dog
+# binding.pry
