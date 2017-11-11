@@ -110,7 +110,7 @@ owner.buy_dog("Charley")
 #
 binding.pry
 
-@pet_hash.each do |key, value|
+@pet_hash.collect do |key, value|
     value.count
 end
 
