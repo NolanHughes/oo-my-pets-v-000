@@ -73,4 +73,3 @@ class Owner
   end
 
 end
-
