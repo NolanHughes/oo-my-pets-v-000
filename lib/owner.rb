@@ -1,5 +1,5 @@
-require 'pry'
-require_relative 'fish.rb'
+# require 'pry'
+# require_relative 'fish.rb'
 class Owner
   attr_reader :species
   attr_accessor :name
@@ -77,5 +77,5 @@ end
 # owner = Owner.new("human")
 # fish = Fish.new("Nemo")
 # owner.pets[:fishes] << fish
-# 
+#
 # binding.pry
