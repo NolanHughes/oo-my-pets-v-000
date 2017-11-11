@@ -89,8 +89,8 @@ tabby = Cat.new("Tabby")
 nemo = Fish.new("Nemo")
 melkor = Cat.new("Melkor")
 [fido, tabby, nemo, melkor].each {|o| o.mood = "happy" }
-@@pets[:dogs] += [fido]
-@@pets[:cats] += [tabby, melkor]
-@@pets[:fishes] += [nemo]
+owner.pets[:dogs] += [fido]
+owner.pets[:cats] += [tabby, melkor]
+owner.pets[:fishes] += [nemo]
 
 binding.pry
