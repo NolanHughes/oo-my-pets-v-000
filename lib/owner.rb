@@ -64,7 +64,7 @@ class Owner
       end
     end
   end
-  
+
   def feed_fish
     @@pet_hash.each do |key, value|
       if key == :fish
