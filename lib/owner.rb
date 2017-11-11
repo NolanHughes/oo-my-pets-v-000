@@ -1,5 +1,5 @@
 require 'pry'
-require_relative 'fish.rb'
+# require_relative 'fish.rb'
 class Owner
   # code goes here
   attr_reader :species
@@ -50,7 +50,7 @@ class Owner
   end
 
   def walk_dogs
-    
+
   end
 
 end
