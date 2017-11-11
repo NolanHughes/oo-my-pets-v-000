@@ -55,7 +55,7 @@ class Owner
         # value.mood = "happy"
         new_dog = Dog.new(name)
         @@pet_hash[:dogs] += [new_dog]
-      end
+      # end
     end
   end
 
