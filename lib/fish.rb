@@ -9,4 +9,3 @@ class Fish
     @mood = "nervous"
   end
 end
-
