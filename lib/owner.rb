@@ -1,7 +1,3 @@
-# require 'pry'
-# require_relative 'fish.rb'
-# require_relative 'dog.rb'
-# require_relative 'cat.rb'
 class Owner
   attr_reader :species
   attr_accessor :name
