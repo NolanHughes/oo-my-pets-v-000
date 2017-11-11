@@ -52,7 +52,7 @@ class Owner
   def walk_dogs
     @@pet_hash.collect do |key, value|
       if key == :dogs
-        value = "happy"
+        key.mood = "happy"
       end
     end
   end
