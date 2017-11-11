@@ -74,8 +74,3 @@ class Owner
 
 end
 
-# owner = Owner.new("human")
-# fish = Fish.new("Nemo")
-# owner.pets[:fishes] << fish
-#
-# binding.pry
