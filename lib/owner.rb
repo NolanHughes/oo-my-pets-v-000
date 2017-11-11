@@ -1,7 +1,7 @@
 require 'pry'
-require_relative 'fish.rb'
-require_relative 'dog.rb'
-require_relative 'cat.rb'
+# require_relative 'fish.rb'
+# require_relative 'dog.rb'
+# require_relative 'cat.rb'
 class Owner
   attr_reader :species
   attr_accessor :name
@@ -107,24 +107,22 @@ owner = Owner.new("human")
 # owner.pets[:cats] += [tabby, melkor]
 # owner.pets[:fishes] += [nemo]
 
-owner.buy_fish("Bubbles")
-owner.buy_fish("Nemo")
-owner.buy_cat("Crookshanks")
-owner.buy_dog("Fido")
-owner.buy_dog("Snuffles")
-owner.buy_dog("Charley")
-#
-binding.pry
-
-@pet_hash = {:fishes => ["fish1"], :dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2", "cat3", "cat4"]}
-@pet_hash.each do |key, value|
-    if key == :fishes
-      @fish_count = value.count
-    elsif key == :dogs
-      @dog_count = value.count
-    elsif key == :cats
-      @cat_count = value.count
-    end
-end
-
-
+# owner.buy_fish("Bubbles")
+# owner.buy_fish("Nemo")
+# owner.buy_cat("Crookshanks")
+# owner.buy_dog("Fido")
+# owner.buy_dog("Snuffles")
+# owner.buy_dog("Charley")
+# #
+# binding.pry
+# 
+# @pet_hash = {:fishes => ["fish1"], :dogs => ["dog1", "dog2", "dog3"], :cats => ["cat1", "cat2", "cat3", "cat4"]}
+# @pet_hash.each do |key, value|
+#     if key == :fishes
+#       @fish_count = value.count
+#     elsif key == :dogs
+#       @dog_count = value.count
+#     elsif key == :cats
+#       @cat_count = value.count
+#     end
+# end
