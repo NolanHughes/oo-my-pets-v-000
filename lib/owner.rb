@@ -62,5 +62,6 @@ end
 
 owner = Owner.new("human")
 dog = Dog.new("Daisy")
+dog2 = Dog.new("Texas")
 owner.pets[:dogs] << dog
 binding.pry
