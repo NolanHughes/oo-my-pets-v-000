@@ -53,8 +53,8 @@ class Owner
     @@pet_hash.each do |key, value|
       if key == :dogs
         #change mood of each instance of dog within the :dogs key
-        value.each do |dog_object|
-          dog_object.mood = "happy"
+        value.each { |dog_object| dog_object.mood = "happy" }
+          
         end
       end
     end
@@ -62,8 +62,3 @@ class Owner
 
 end
 
-owner = Owner.new("human")
-dog = Dog.new("Daisy")
-dog2 = Dog.new("Texas")
-owner.pets[:dogs] += [dog, dog2]
-binding.pry
