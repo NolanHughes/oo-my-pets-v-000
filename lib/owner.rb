@@ -99,21 +99,14 @@ class Owner
 
 end
 
-# owner = Owner.new("human")
-# fido = Dog.new("Fido")
-# tabby = Cat.new("Tabby")
-# nemo = Fish.new("Nemo")
-# melkor = Cat.new("Melkor")
-# [fido, tabby, nemo, melkor].each {|o| o.mood = "happy" }
-# owner.pets[:dogs] += [fido]
-# owner.pets[:cats] += [tabby, melkor]
-# owner.pets[:fishes] += [nemo]
-
-# owner.buy_fish("Bubbles")
-# owner.buy_fish("Nemo")
-# owner.buy_cat("Crookshanks")
-# owner.buy_dog("Fido")
-# owner.buy_dog("Snuffles")
-# owner.buy_dog("Charley")
-# #
+owner = Owner.new("human")
+fido = Dog.new("Fido")
+tabby = Cat.new("Tabby")
+nemo = Fish.new("Nemo")
+[fido, tabby, nemo].each {|o| o.mood = "happy" }
+owner.pets = {
+  :dogs => [fido, Dog.new("Daisy")], 
+  :fishes => [nemo], 
+  :cats => [Cat.new("Mittens"), tabby]
+}
 # binding.pry
