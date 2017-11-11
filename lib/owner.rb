@@ -80,7 +80,7 @@ class Owner
         value.each { |pets_object| pets_object.mood = "nervous" }
         value.each { |pets_object| pets_object.clear }
     end
-    
+
   end
 
 end
