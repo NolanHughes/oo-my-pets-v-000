@@ -1,7 +1,6 @@
 # require 'pry'
 # require_relative 'dog.rb'
 class Owner
-  # code goes here
   attr_reader :species
   attr_accessor :name
 
