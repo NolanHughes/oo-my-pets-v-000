@@ -50,7 +50,7 @@ class Owner
   end
 
   def walk_dogs
-    @@pet_hash.collect do |key, value|
+    @@pet_hash.each do |key, value|
       if key == :dogs
         #change mood of each instance of dog within the :dogs key
         value
