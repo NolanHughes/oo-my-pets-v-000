@@ -110,8 +110,8 @@ owner.buy_dog("Charley")
 #
 binding.pry
 
-@pet_hash.collect do |key, value|
-    value.count
+@pet_hash.each do |key, value|
+    @count = value.count
 end
 
 @pet_hash = {:dogs => ["dog1", "dog2"], :cats => ["cat1", "cat2"]}
