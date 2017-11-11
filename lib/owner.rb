@@ -57,4 +57,12 @@ class Owner
     end
   end
 
+  def walk_dogs
+    @@pet_hash.each do |key, value|
+      if key == :dogs
+        value.each { |dog_object| dog_object.mood = "happy" }
+      end
+    end
+  end
+
 end
