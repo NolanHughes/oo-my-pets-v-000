@@ -85,14 +85,14 @@ class Owner
   def list_pets
     @@pet_hash.each do |key, value|
         if key == :fishes
-          fish_count = value.count
+          @fish_count = value.count
         elsif key == :dogs
-          dog_count = value.count
+          @dog_count = value.count
         elsif key == :cats
-          cat_count = value.count
+          @cat_count = value.count
         end
     end
-    "I have #{fish_count} fish, #{dog_count} dog(s), and #{cat_count} cat(s)."
+    "I have #{@fish_count} fish, #{@dog_count} dog(s), and #{@cat_count} cat(s)."
   end
 
 end
