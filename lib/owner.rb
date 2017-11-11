@@ -50,6 +50,7 @@ class Owner
   end
 
   def walk_dogs
+    @@pet_hash[:dogs.mood] = "happy"
     :dogs.mood = "happy"
   end
 
